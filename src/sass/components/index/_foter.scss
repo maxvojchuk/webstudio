@@ -1,0 +1,29 @@
+.footer {
+  @extend %flexibility;
+  background-color: $baseBackgroundColor;
+  height: 252px;
+  flex-direction: column;
+  min-width: 1600px;
+  padding-left: 10%;
+
+  &__link {
+    @include text($descriptionsColor, 14px, 500);
+    letter-spacing: 0.28px;
+  }
+  &__link.adress {
+    @include text($subBaseColor, 14px, 400);
+    letter-spacing: 0.42px;
+  }
+}
+
+.footer__logo {
+  width: 145px;
+  height: 31px;
+  margin-bottom: 20px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
